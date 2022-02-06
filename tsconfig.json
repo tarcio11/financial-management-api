@@ -5,6 +5,8 @@
     "target": "es2021",
     "esModuleInterop": true,
     "strictNullChecks": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
     "rootDirs": ["src", "tests"],
     "baseUrl": "src",
@@ -13,6 +15,5 @@
       "@/*": ["*"]
     }
   },
-  "include": ["src", "tests"],
-  "exclude": []
+  "include": ["src", "tests"]
 }
