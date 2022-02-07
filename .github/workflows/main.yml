@@ -35,8 +35,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "."
-          target: "~/app/financial-management-api"
+          source: ".dist"
+          target: "test"
       
 
      # SUBSTITUIR O CÓDIGO EXISTENTE NA PASTA "dist" PELO NOVO CÓDIGO     
