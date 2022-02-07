@@ -47,6 +47,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd ~/app/financial-management-api
-            yarn
-            yarn typeorm migration:run
-            pm2 restart all
+      - run: yarn
+      - run: yarn typeorm migration:run
+      - run: pm2 restart all
