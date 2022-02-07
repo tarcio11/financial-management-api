@@ -49,4 +49,4 @@ jobs:
             cd ~/app/financial-management-api
             yarn
             yarn typeorm migration:run
-            sudo pm2 restart financial-api
+            pm2 restart financial-api
