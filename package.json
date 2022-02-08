@@ -10,7 +10,8 @@
     "build": "npm run clean && tsc -p tsconfig-build.json",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "start:ci:cd": "yarn && yarn typeorm migration:run && pm2 restart financial-api"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
