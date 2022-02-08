@@ -37,4 +37,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: ".,!node_modules"
           target: "~/app/financial-management-api"
-      - run: yarn && pm2 restart financial-api
+      - run: yarn
