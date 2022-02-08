@@ -45,8 +45,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          target: "~/app/financial-management-api"
-          
       - run: yarn
       - run: yarn typeorm migration:run
       - run: pm2 restart financial-api
