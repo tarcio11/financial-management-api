@@ -37,4 +37,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: ".,!node_modules"
           target: "~/app/financial-management-api"
-      - run: yarn start:ci:cd
+      - run: yarn && node ./node_modules/typeorm/cli.js migration:run && pm2 restart financial-api
